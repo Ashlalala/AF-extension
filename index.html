@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="sketch.js" defer></script>
+</head>
+<body>
+  <legend>Hur har du sökt jobbet?</legent>
+  <input type="radio" name="bs" value="0" id="annons" required="true" checked>
+  <label for="annons">Genom annons</label>
+  <input type="radio" name="bs" value="1" id="spontan" required="true">
+  <label for="spontan">Spontanansökan</label>
+
+  <br>
+  
+  <label for="company-name">Alla arbetsgivare separerade med ','</label>
+  <input placeholder="pers1, pers2, pers3, etc." id="company-name" type="text">
+
+  <label for="jobb">Fyll i vilket jobb du har sökt</label>
+  <input placeholder="Typ av jobb" id="jobb" type="text">
+
+  <label for="ort">Fyll i ort</label>
+  <input placeholder="Ort" id="ort" type="text">
+
+  <label for="date">Vilket datum sökte du jobbet?</label>
+  <input placeholder="åååå-mm-dd" id="date" type="text">
+  <button id="submit">Submit</button>
+</body>
+</html>

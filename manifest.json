@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "form-fill-arbetsformedlingen",
+  "version": "0.1",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://arbetsformedlingen.se/for-arbetssokande/mina-sidor/aktivitetsrapportera/lagg-till-aktivitet"
+      ],
+      "js": ["content.js"]
+    }
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "permissions": ["tabs"],
+  "browser_action": {
+    "default_icon": "logo.png",
+    "default_popup": "index.html",
+    "default_title": "Ali"
+  }
+}
